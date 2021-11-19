@@ -6,18 +6,17 @@ class Distancias {
         )
     }
     static incluiMultiplas(arr) {
-        //console.log(arr)
         let listaDistancias = []
-        for (let i = 0; i < arr.length - 1; i++) {
-            for (let j = 1; j < arr.length; j++) {
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr.length; j++) {
                 let valor = this.calcula(arr[i].coordenada.lat,
-                    arr[i].coordenada.lng,
                     arr[j].coordenada.lat,
+                    arr[i].coordenada.lng,
                     arr[j].coordenada.lng)
                 let trajeto = `${arr[i].endereco} até ${arr[j].endereco}`
                 let distaciaFormatada = {
                     intinerario: trajeto,
-                    distancia : valor
+                    distancia: valor
                 }
                 listaDistancias.push(distaciaFormatada)
             }
@@ -36,7 +35,18 @@ class Distancias {
                 return 0;
             }
         })
+        
         return arrPopulado;
+    }
+    static retornaMaiorEMenor(arr) {
+        let listado = this.ordenaDistancias(arr)
+
+        let Remove = 0;
+        listado = listado.filter((item) =>{
+            return item.distancia !== Remove
+        });
+        let ultimo = listado.length - 1
+        return { maisPróximo: listado[0], maisDistante: listado[ultimo] };
     }
 }
 
