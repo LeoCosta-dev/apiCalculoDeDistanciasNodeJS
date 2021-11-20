@@ -5,5 +5,5 @@ const PORT = process.env.PORT || 3000;
 app.use(cors())
 
 app.listen(PORT, () => {
-    console.log(`Servido rodadando na porta ${port}.`)
+    console.log(`Servido rodadando na porta ${PORT}.`)
 })

@@ -10,7 +10,7 @@ module.exports = (app) => {
             res.status(200).json(ModelDistancia.retornaMaiorEMenor(agrupadas))
         })
         .catch((e) => {
-                res.status(500).json(e.message)
+                res.status(404).json(e.message)
         })
     })
 }
