@@ -1,5 +1,3 @@
-https://api-calcula-distancias-nodejs.herokuapp.com/
-
 # Desenvolvimento de uma api do tipo Rest em NodeJs utilizando a framework express.
 
 ## Descrição da aplicação:
