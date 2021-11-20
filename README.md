@@ -36,7 +36,7 @@ Para o desenvolvimento como já mencionado foi utilizado JavaScript com NodeJS c
 As dependencias podem ser encontradas <a href = 'https://github.com/LeoCosta-dev/apiCalculoDeDistanciasNodeJS/blob/main/package.json'>neste arquivo</a> do qual o trecho acima foi extraído para instalar basta rodar o comando abaixo selecionando e copiando o mesmo com as teclas "Ctrl + c" e em seguida colar no terminal com as telas "Ctrl + Shift + v" o comando abaixo já irá fazer o clone deste repositório e instalar as dependencias necessárias.
 
 ```
-git clone https://github.com/LeoCosta-dev/apiRestNodeJsAgendaDeAtendimentos.git && cd apiRestNodeJsAgendaDeAtendimentos && npm install
+git clone https://github.com/LeoCosta-dev/apiCalculoDeDistanciasNodeJS && npm install
 ```
 ## Dependencias de desenvolvimento:
 ```js
