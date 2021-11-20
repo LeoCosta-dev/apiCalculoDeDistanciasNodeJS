@@ -6,9 +6,9 @@ const consign = require("consign");
 const cors = require("cors");
 
 module.exports = () => {
-    app.use(cors())
     // Declaro uma constante para execução do express.
     const app = express();
+    app.use(cors())
     // informo o formato de arquivo aceito no corpo da requisição pela aplicação com o método nativo ao invés da biblioteca externa body-parse que caiu em desuso.
     app.use(express.json());
     
