@@ -13,7 +13,7 @@ class Distancias {
                     arr[j].coordenada.lat,
                     arr[i].coordenada.lng,
                     arr[j].coordenada.lng)
-                let trajeto = `${arr[i].endereco} até ${arr[j].endereco}`
+                let trajeto = {partida: `${arr[i].endereco}`, chegada: `${arr[j].endereco}`}
                 let distaciaFormatada = {
                     intinerario: trajeto,
                     distancia: valor
