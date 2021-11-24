@@ -10,10 +10,8 @@ class ApiGoogle {
     }
     static async agrupaCoordenadas(...parametros) {
         let agrupadas = []
-        //console.log(parametros)
         for (let i = 0; i < parametros[0].length; i++) {
             let endereco = await this.coordenadas(parametros[0][i])
-            //console.log(endereco)
             agrupadas.push(endereco)
         }
         return agrupadas;
