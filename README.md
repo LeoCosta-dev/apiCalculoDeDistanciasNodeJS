@@ -8,14 +8,20 @@ A aplicação é um ambiente back-end onde como parametros de entrada são receb
 
 ```json
 {
-    "maisPróximo": {
-        "intinerario": "Av. Rio Branco, 1 ​ Centro, Rio de Janeiro ​ RJ, 20090​ 003 até Praça Mal. Âncora, 122 Centro, Rio de Janeiro RJ, 20021​200",
-        "distancia": 0.011921952761606592
-    },
-    "maisDistante": {
-        "intinerario": "Av. Rio Branco, 1 ​ Centro, Rio de Janeiro ​ RJ, 20090​ 003 até Rua 19 de Fevereiro, 34 ​ Botafogo, Rio de Janeiro ​ RJ, 22280​ 030",
-        "distancia": 0.05389845314153423
-    }
+	"closer": {
+		"path": {
+			"startingPoint": "Av.+Rio+Branco,+1+Centro,+Rio+de+Janeiro+RJ,+20090​003",
+			"destiny": "Praça+Mal.+Âncora,+122+Centro,+Rio+de+Janeiro+RJ,+20021200"
+		},
+		"distance": 0.011921952761606592
+	},
+	"further": {
+		"path": {
+			"startingPoint": "Av.+Rio+Branco,+1+Centro,+Rio+de+Janeiro+RJ,+20090​003",
+			"destiny": "Rua+19+de+Fevereiro,+34+Botafogo,+Rio+de+Janeiro+RJ,+22280​030"
+		},
+		"distance": 0.05389910936592824
+	}
 }
 ```
 
