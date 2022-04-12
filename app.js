@@ -1,5 +1,5 @@
 import express from "express";
-import Distancias from "./src/controllers/Distance.js";
+import Distance from "./src/controllers/Distance.js";
 import * as dotenv from "dotenv"
 import cors from "cors"
 
@@ -15,4 +15,4 @@ app.listen(port, () => {
     console.log("servidor em http://localhost:3000")
 })
 
-Distancias.router(app);
+Distance.router(app);
